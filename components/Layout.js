@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <NavBar />
-      <main className={utilStyles.container}>{children}</main>
+      <main>{children}</main>
     </>
   )
 }

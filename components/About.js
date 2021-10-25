@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <section className={styles.about_section}>
-        <h3>About me</h3>
+        <h3 className={styles.about_title}>About me</h3>
         <p>
           Hi! I&apos;m Steven, I am a software engineer from Spain who studied Software Engineering
           in UNED. I&apos;m an enthusiastic about Full Stack Development, AI, and Blockchain. My

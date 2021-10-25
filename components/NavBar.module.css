@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: block;
+  position: fixed;
   width: 100%;
-  padding: 1em 0;
+  padding: 1.2em 0;
   top: 0;
-  gap: 0.75rem;
-  backdrop-filter: saturate(180%) blur(27px);
+  gap: 2rem;
   box-shadow: inset 0 -1px #0000001f;
-  background-color: rgba(247, 247, 247, 0.3);
+  backdrop-filter: saturate(180%) blur(27px);
+  background-color: rgba(247, 247, 247, 0.2);
+}
+
+.navbar_item {
+  font-size: 1.2em;
 }
