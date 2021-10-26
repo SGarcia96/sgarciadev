@@ -12,14 +12,20 @@ const Hero = () => {
           href="https://www.linkedin.com/in/sgarciadev/?locale=en_US"
           target="_blank"
           rel="noopener noreferrer">
-          <FaLinkedin />
+          <div className={styles.social_item__group}>
+            <FaLinkedin />
+            <span className={styles.social_name}>linkedin</span>
+          </div>
         </a>
         <a
           className={styles.social_item}
           href="https://github.com/SGarcia96"
           target="_blank"
           rel="noopener noreferrer">
-          <FaGithub />
+          <div className={styles.social_item__group}>
+            <FaGithub />
+            <span className={styles.social_name}>github</span>
+          </div>
         </a>
       </div>
     </section>

@@ -21,6 +21,17 @@
 .hero_social {
   display: flex;
   gap: 1em;
-  font-size: 2em;
+  font-size: 1.65em;
   margin-top: 15px;
+}
+
+.social_item__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_name {
+  font-size: 0.75em;
+  text-transform: capitalize;
 }

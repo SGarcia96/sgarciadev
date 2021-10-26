@@ -1,0 +1,54 @@
+.about_section {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about_content {
+  padding: 2rem;
+  max-width: 1140px;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "title title" "avatar avatar" "info info";
+}
+
+.about_avatar {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  grid-area: avatar;
+}
+
+.about_avatar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(171, 151, 249, var(--percentage-gradients));
+  filter: blur(128px);
+  z-index: -1;
+}
+
+.about_image {
+  margin: 0 auto;
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+}
+
+.about_title {
+  font-size: var(--subtitle-font);
+  margin: 0;
+  grid-area: title;
+}
+
+.about_description {
+  width: 100%;
+  grid-area: info;
+}

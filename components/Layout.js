@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Link from "next/link"
 import NavBar from "./NavBar"
 import utilStyles from "../styles/Home.module.css"
 
@@ -7,9 +6,10 @@ export const siteTitle = "SGarcia Dev"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className={utilStyles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script src="../theme.js" defer></script>
         <meta
           name="description"
           content="Welcome to my website, I'm a Software engineer and here you can discover my Projects | Blog | and more"
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       </Head>
       <NavBar />
       <main>{children}</main>
-    </>
+    </div>
   )
 }
 

@@ -1,9 +1,8 @@
 import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
 import Layout, { siteTitle } from "../components/Layout"
 import Hero from "../components/Hero"
 import About from "../components/About"
+import Skills from "../components/Skills"
 
 const Home = () => {
   return (
@@ -15,6 +14,7 @@ const Home = () => {
       </Head>
       <Hero />
       <About />
+      <Skills />
     </Layout>
   )
 }
