@@ -4,7 +4,6 @@
     justify-content: baseline;
     align-items: center;
     width: 100%;
-    max-width: 1280px;
     min-height: 100vh;
 }
 
@@ -14,7 +13,8 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2em;
-    padding: 1em;
+    padding: 2rem;
+    max-width: 1280px;
     background-color: rgba(66, 62, 57, 0.1);
     border: 1px solid rgba(66, 62, 57, 0.02);
     border-radius: 5px;
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: .375rem;
+    border-radius: 5px;
     margin: 0;
 }
 
@@ -47,6 +47,13 @@
 
 .project_title {
     color: var(--semidark-color);
+}
+
+.project_stack {
+  margin: 0;
+  font-size: 14px;
+  font-variant: small-caps;
+  color: var(--mid-color);
 }
 
 .project_description {
@@ -78,31 +85,19 @@
     border-radius: 5px;
     padding: 20px;
     width: 200px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
 }
 
-.project_button:after {
-  content: "";
-  background: var(--mid-color);
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
+.project_button:hover {
+  background-color: var(--mid-color);
+  transition: all 0.3s
 }
 
-.project_button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
+.project_button:active {
+  background-color: var(--mid-color);
+  transition: all 0.3s
 }
 
 .button_text {
