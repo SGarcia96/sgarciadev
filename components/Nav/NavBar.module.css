@@ -20,12 +20,12 @@
 }
 
 .navbar_item:hover {
-  color: var(--semidark-color);
+  color: var(--mid-color);
   transition: color .3s;
 }
 
 .navbar_item:active {
-  color: var(--semidark-color);
+  color: var(--mid-color);
   transition: color .3s;
 }
 
