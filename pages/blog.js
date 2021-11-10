@@ -1,9 +1,10 @@
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
+import Blog from "../components/Blog/Blog"
 
 const Blogs = () => {
   return (
     <Layout>
-      <h1>blogs</h1>
+      <Blog />
     </Layout>
   )
 }

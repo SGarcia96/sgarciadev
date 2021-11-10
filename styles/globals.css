@@ -8,7 +8,7 @@
   --dark-color: #5f4938;
   --semidark-color: #8a6c44;
   --mid-color: #d0bc91;
-  --semilight-color: #e7e8e3;
+  --semilight-color: #c6c4bc;
   --light-color: #e7e8e3;
   --transition-delay: 1s;
 }
@@ -28,6 +28,7 @@ body {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-image: url("/images/abstract-white2.png");
   backdrop-filter: blur(200px) opacity(90%) sepia(70%);
   width: 100%;
@@ -54,6 +55,12 @@ a {
 }
 
 a:hover {
+  color: var(--mid-color);
+  transform: scale(1.1);
+  transition: color, transform 0.3s;
+}
+
+a:active {
   color: var(--mid-color);
   transform: scale(1.1);
   transition: color, transform 0.3s;

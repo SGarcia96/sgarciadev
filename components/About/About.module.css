@@ -7,14 +7,22 @@
 
 .about_content {
   padding: 2rem;
-  max-width: 1140px;
+  max-width: 1280px;
   display: grid;
   gap: 3rem;
   grid-template-areas: "title title" "avatar avatar" "info info";
 }
 
+@media screen and (min-width:768px) {
+  .about_content {
+    grid-template-areas: "title title" "avatar info";
+}
+}
+
 .about_avatar {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: 0 auto;
   grid-area: avatar;
@@ -35,6 +43,13 @@
   z-index: -1;
 }
 
+.about_title {
+  font-size: var(--subtitle-font);
+  margin: 0;
+  grid-area: title;
+  color: var(--semidark-color);
+}
+
 .about_image {
   border: 1px solid rgb(0, 0, 0);
 	height: 100px;
@@ -45,13 +60,8 @@
   filter: sepia(40%);
 }
 
-.about_title {
-  font-size: var(--subtitle-font);
-  margin: 0;
-  grid-area: title;
-}
-
 .about_description {
   width: 100%;
   grid-area: info;
+  color: var(--dark-color);
 }
