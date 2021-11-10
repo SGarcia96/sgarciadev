@@ -13,4 +13,20 @@
   z-index: 1;
 }
 
+.navbar_item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navbar_item:hover {
+  color: var(--semidark-color);
+  transition: color .3s;
+}
+
+.navbar_item:active {
+  color: var(--semidark-color);
+  transition: color .3s;
+}
+
 
