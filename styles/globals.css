@@ -10,6 +10,8 @@
   --mid-color: #d0bc91;
   --semilight-color: #c6c4bc;
   --light-color: #e7e8e3;
+  --title-color: #5d4525;
+  --subtitle-color: #8a7a56;
   --transition-delay: 1s;
 }
 
@@ -29,7 +31,8 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url("/images/background-blur.jpg");
+  /* background-image: url("/images/background.png"); */
+  background-color: antiquewhite;
   width: 100%;
   height: 100%;
   background-position: center;

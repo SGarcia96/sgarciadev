@@ -9,6 +9,8 @@
 
 .title {
   font-size: var(--title-font);
+  font-weight: 600;
+  font-variant: small-caps;
   margin: 0.25em;
   text-align: center;
   color: #5f4938;
@@ -16,6 +18,7 @@
 
 .subtitle {
   font-size: var(--subtitle-font);
+  font-variant: small-caps;
   margin-top: 0;
   color: #d0bc91;
 }
@@ -35,5 +38,5 @@
 
 .social_name {
   font-size: 0.75em;
-  text-transform: capitalize;
+  font-variant: small-caps;  
 }

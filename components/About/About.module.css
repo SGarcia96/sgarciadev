@@ -3,6 +3,7 @@
   place-items: center;
   width: 100%;
   min-height: 100vh;
+  margin-top: .3em;
 }
 
 .about_content {
@@ -45,9 +46,12 @@
 
 .about_title {
   font-size: var(--subtitle-font);
+  font-variant: small-caps;
   margin: 0;
   grid-area: title;
   color: var(--semidark-color);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--mid-color);
 }
 
 .about_image {
