@@ -1,5 +1,5 @@
-import styles from "./Skills.module.css"
-import Image from "next/image"
+import styles from './Skills.module.css'
+import Image from 'next/image'
 
 const Skills = () => {
   return (
@@ -14,7 +14,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"html"}
+              alt={'html'}
             />
             <span className={styles.skills_name}>HTML</span>
           </li>
@@ -25,7 +25,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"css"}
+              alt={'css'}
             />
             <span className={styles.skills_name}>CSS</span>
           </li>
@@ -36,7 +36,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"javascript"}
+              alt={'javascript'}
             />
             <span className={styles.skills_name}>JavaScript</span>
           </li>
@@ -47,7 +47,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"typescript"}
+              alt={'typescript'}
             />
             <span className={styles.skills_name}>TypeScript</span>
           </li>
@@ -58,7 +58,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"react"}
+              alt={'react'}
             />
             <span className={styles.skills_name}>React</span>
           </li>
@@ -69,7 +69,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"nodejs"}
+              alt={'nodejs'}
             />
             <span className={styles.skills_name}>NodeJs</span>
           </li>
@@ -80,7 +80,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"express"}
+              alt={'express'}
             />
             <span className={styles.skills_name}>Express</span>
           </li>
@@ -91,7 +91,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"mongodb"}
+              alt={'mongodb'}
             />
             <span className={styles.skills_name}>MongoDB</span>
           </li>
@@ -102,7 +102,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"mysql"}
+              alt={'mysql'}
             />
             <span className={styles.skills_name}>MySql</span>
           </li>
@@ -113,7 +113,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"java"}
+              alt={'java'}
             />
             <span className={styles.skills_name}>Java</span>
           </li>
@@ -124,7 +124,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"spring"}
+              alt={'spring'}
             />
             <span className={styles.skills_name}>Spring</span>
           </li>
@@ -135,7 +135,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"c shard"}
+              alt={'c shard'}
             />
             <span className={styles.skills_name}>C#</span>
           </li>
@@ -146,7 +146,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"solidity"}
+              alt={'solidity'}
             />
             <span className={styles.skills_name}>Solidity</span>
           </li>
@@ -157,7 +157,7 @@ const Skills = () => {
               className={styles.skills_image}
               height={84}
               width={84}
-              alt={"docker"}
+              alt={'docker'}
             />
             <span className={styles.skills_name}>Docker</span>
           </li>

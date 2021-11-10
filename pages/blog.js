@@ -1,5 +1,5 @@
-import Layout from "../components/Layout/Layout"
-import Blog from "../components/Blog/Blog"
+import Layout from '../components/Layout/Layout'
+import Blog from '../components/Blog/Blog'
 
 const Blogs = () => {
   return (

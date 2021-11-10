@@ -1,8 +1,8 @@
-import Head from "next/head"
-import NavBar from "../Nav/NavBar"
-import utilStyles from "../../styles/Home.module.css"
+import Head from 'next/head'
+import NavBar from '../Nav/NavBar'
+import utilStyles from '../../styles/Home.module.css'
 
-export const siteTitle = "SGarcia Dev"
+export const siteTitle = 'SGarcia Dev'
 
 const Layout = ({ children }) => {
   return (

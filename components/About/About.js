@@ -1,5 +1,5 @@
-import styles from "./About.module.css"
-import Image from "next/image"
+import styles from './About.module.css'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
             className={styles.about_image}
             height={300}
             width={300}
-            alt={"html"}
+            alt={'html'}
           />
         </div>
         <div className={styles.about_description}>

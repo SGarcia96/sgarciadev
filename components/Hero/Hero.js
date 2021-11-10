@@ -1,5 +1,5 @@
-import styles from "./Hero.module.css"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
+import styles from './Hero.module.css'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const Hero = () => {
   return (

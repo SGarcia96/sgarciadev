@@ -1,8 +1,8 @@
-import styles from "./Project.module.css"
-import Image from "next/image"
+import styles from './Project.module.css'
+import Image from 'next/image'
 
 const Project = () => {
-    return (
+  return (
       <section className={styles.section_container}>
         <div className={styles.section_content}>
           <div className={styles.image_container}>
@@ -12,7 +12,7 @@ const Project = () => {
               className={styles.project_image}
               width={565}
               height={520}
-              alt={"html"}
+              alt={'html'}
             />
           </div>
           <div className={styles.flex_description}>
@@ -31,7 +31,7 @@ const Project = () => {
           </div>
         </div>
       </section>
-    )
+  )
 }
 
 export default Project

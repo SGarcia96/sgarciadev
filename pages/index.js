@@ -1,8 +1,8 @@
-import Head from "next/head"
-import Layout, { siteTitle } from "../components/Layout/Layout"
-import Hero from "../components/Hero/Hero"
-import About from "../components/About/About"
-import Skills from "../components/Skills/Skills"
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/Layout/Layout'
+import Hero from '../components/Hero/Hero'
+import About from '../components/About/About'
+import Skills from '../components/Skills/Skills'
 
 const Home = () => {
   return (
