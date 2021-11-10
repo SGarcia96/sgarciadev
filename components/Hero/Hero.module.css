@@ -4,18 +4,20 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 }
 
 .title {
   font-size: var(--title-font);
   margin: 0.25em;
+  text-align: center;
+  color: #5f4938;
 }
 
 .subtitle {
   font-size: var(--subtitle-font);
   margin-top: 0;
-  color: var(--foreground-color);
+  color: #d0bc91;
 }
 
 .hero_social {

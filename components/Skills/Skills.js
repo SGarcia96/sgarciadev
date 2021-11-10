@@ -10,7 +10,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/html.svg"
+              src="/images/tecnologies/html.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -21,7 +21,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/css.svg"
+              src="/images/tecnologies/css.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -32,7 +32,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/javascript.svg"
+              src="/images/tecnologies/javascript.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -43,7 +43,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/typescript.svg"
+              src="/images/tecnologies/typescript.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -54,7 +54,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/react.svg"
+              src="/images/tecnologies/react.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -65,7 +65,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/nodejs.svg"
+              src="/images/tecnologies/nodejs.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -76,7 +76,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/express.svg"
+              src="/images/tecnologies/express.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -87,7 +87,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/mongodb.svg"
+              src="/images/tecnologies/mongodb.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -98,7 +98,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/mysql.svg"
+              src="/images/tecnologies/mysql.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -109,7 +109,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/java.svg"
+              src="/images/tecnologies/java.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -120,7 +120,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/spring.svg"
+              src="/images/tecnologies/spring.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -131,7 +131,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/cshard.svg"
+              src="/images/tecnologies/cshard.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -142,7 +142,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/solidity.svg"
+              src="/images/tecnologies/solidity.svg"
               className={styles.skills_image}
               height={84}
               width={84}
@@ -153,7 +153,7 @@ const Skills = () => {
           <li className={styles.skills_item}>
             <Image
               priority
-              src="/images/docker.svg"
+              src="/images/tecnologies/docker.svg"
               className={styles.skills_image}
               height={84}
               width={84}

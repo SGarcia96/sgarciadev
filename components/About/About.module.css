@@ -36,10 +36,13 @@
 }
 
 .about_image {
-  margin: 0 auto;
-  position: relative;
-  max-width: 280px;
-  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	border-radius: 10px  20px 10px 150px;
+	box-shadow: 1px 20px 4px rgba(87, 84, 84, 0.12);
+  filter: sepia(40%);
 }
 
 .about_title {

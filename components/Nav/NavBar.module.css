@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: sticky;
   width: 100%;
   padding: 1.2em 0;
   top: 0;
@@ -12,3 +12,5 @@
   background-color: rgba(247, 247, 247, 0.2);
   z-index: 1;
 }
+
+

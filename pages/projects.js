@@ -1,9 +1,10 @@
-import Layout from "../components/Layout"
+import Layout from "../components/Layout/Layout"
+import Project from "../components/Project/Project"
 
 const Projects = () => {
   return (
     <Layout>
-      <h1>projects</h1>
+      <Project />
     </Layout>
   )
 }
