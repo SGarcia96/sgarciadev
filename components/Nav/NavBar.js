@@ -4,19 +4,21 @@ import LinkItem from './LinkItem'
 const NavBar = () => {
   return (
     <header>
-      <nav className={styles.navbar_nav}>
-        <LinkItem
-          href="/"
-          name="Home"
-        />
-        <LinkItem
-          href="/projects"
-          name="Projects"
-        />
-        <LinkItem
-          href="/blog"
-          name="Blog"
-        />
+      <nav>
+        <ul className={styles.navbar_ul}>
+          <LinkItem
+            href="/"
+            name="Home"
+          />
+          <LinkItem
+            href="/projects"
+            name="Projects"
+          />
+          <LinkItem
+            href="/blog"
+            name="Blog"
+          />
+        </ul>
       </nav>
     </header>
   )
