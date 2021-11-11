@@ -1,5 +1,5 @@
 import styles from './Skills.module.css'
-import Image from 'next/image'
+import SkillItem from './SkillItem'
 
 const Skills = () => {
   return (
@@ -7,160 +7,118 @@ const Skills = () => {
       <div className={styles.skills_content}>
         <h3 className={styles.skills_title}>Skills</h3>
         <ul className={styles.skills_list}>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/html.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'html'}
-            />
-            <span className={styles.skills_name}>HTML</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/css.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'css'}
-            />
-            <span className={styles.skills_name}>CSS</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/javascript.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'javascript'}
-            />
-            <span className={styles.skills_name}>JavaScript</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/typescript.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'typescript'}
-            />
-            <span className={styles.skills_name}>TypeScript</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/react.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'react'}
-            />
-            <span className={styles.skills_name}>React</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/nodejs.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'nodejs'}
-            />
-            <span className={styles.skills_name}>NodeJs</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/express.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'express'}
-            />
-            <span className={styles.skills_name}>Express</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/mongodb.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'mongodb'}
-            />
-            <span className={styles.skills_name}>MongoDB</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/mysql.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'mysql'}
-            />
-            <span className={styles.skills_name}>MySql</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/java.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'java'}
-            />
-            <span className={styles.skills_name}>Java</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/spring.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'spring'}
-            />
-            <span className={styles.skills_name}>Spring</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/cshard.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'c shard'}
-            />
-            <span className={styles.skills_name}>C#</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/solidity.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'solidity'}
-            />
-            <span className={styles.skills_name}>Solidity</span>
-          </li>
-          <li className={styles.skills_item}>
-            <Image
-              priority
-              src="/images/tecnologies/docker.svg"
-              className={styles.skills_image}
-              height={84}
-              width={84}
-              alt={'docker'}
-            />
-            <span className={styles.skills_name}>Docker</span>
-          </li>
+          <SkillItem
+            src="/images/tecnologies/html.svg"
+            h="84"
+            w="84"
+            alt="html icon"
+            name="HTML"
+          />
+          <SkillItem
+            src="/images/tecnologies/css.svg"
+            h="84"
+            w="84"
+            alt="css icon"
+            name="CSS"
+          />
+          <SkillItem
+            src="/images/tecnologies/javascript.svg"
+            h="84"
+            w="84"
+            alt="javascript icon"
+            name="javascript"
+          />
+          <SkillItem
+            src="/images/tecnologies/typescript.svg"
+            h="84"
+            w="84"
+            alt="typescript icon"
+            name="typescript"
+          />
+          <SkillItem
+            src="/images/tecnologies/react.svg"
+            h="84"
+            w="84"
+            alt="react icon"
+            name="react"
+          />
+          <SkillItem
+            src="/images/tecnologies/nextjs.svg"
+            h="84"
+            w="84"
+            alt="nextjs icon"
+            name="nextjs"
+          />
+          <SkillItem
+            src="/images/tecnologies/nodejs.svg"
+            h="84"
+            w="84"
+            alt="nodejs icon"
+            name="nodejs"
+          />
+          <SkillItem
+            src="/images/tecnologies/express.svg"
+            h="84"
+            w="84"
+            alt="express icon"
+            name="express"
+          />
+          <SkillItem
+            src="/images/tecnologies/mongodb.svg"
+            h="84"
+            w="84"
+            alt="mongodb icon"
+            name="mongodb"
+          />
+          <SkillItem
+            src="/images/tecnologies/mysql.svg"
+            h="84"
+            w="84"
+            alt="mysql icon"
+            name="mysql"
+          />
+          <SkillItem
+            src="/images/tecnologies/java.svg"
+            h="84"
+            w="84"
+            alt="java icon"
+            name="java"
+          />
+          <SkillItem
+            src="/images/tecnologies/spring.svg"
+            h="84"
+            w="84"
+            alt="spring icon"
+            name="spring"
+          />
+          <SkillItem
+            src="/images/tecnologies/python.svg"
+            h="84"
+            w="84"
+            alt="python icon"
+            name="python"
+          />
+          <SkillItem
+            src="/images/tecnologies/cshard.svg"
+            h="84"
+            w="84"
+            alt="cshard icon"
+            name="cshard"
+          />
+          <SkillItem
+            src="/images/tecnologies/solidity.svg"
+            h="84"
+            w="84"
+            alt="solidity icon"
+            name="solidity"
+          />
+          <SkillItem
+            src="/images/tecnologies/docker.svg"
+            h="84"
+            w="84"
+            alt="docker icon"
+            name="docker"
+          />
         </ul>
       </div>
     </section>

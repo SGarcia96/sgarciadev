@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "author": "Steven Garcia Cervera",
-  "description": "My Portfolio | Personal website | Blog",
+  "description": "My Portfolio | Personal Website | Projects | Blog",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,18 +11,18 @@
     "lint": "eslint --fix ."
   },
   "dependencies": {
+    "framer-motion": "5.2.1",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "4.3.1",
-    "styled-components": "5.3.3"
+    "react-icons": "4.3.1"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.1"
   }
 }

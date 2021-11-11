@@ -1,21 +1,15 @@
 import styles from './About.module.css'
-import Image from 'next/image'
+import Avatar from './Avatar'
 
 const About = () => {
   return (
     <section className={styles.about_section}>
       <div className={styles.about_content}>
-          <h2 className={styles.about_title}>About me</h2>
-        <div className={styles.about_avatar}>
-          <Image
-            priority
-            src="/images/profile.jpg"
-            className={styles.about_image}
-            height={300}
-            width={300}
-            alt={'html'}
-          />
-        </div>
+        <h2 className={styles.about_title}>About me</h2>
+        <Avatar
+          src="/images/profile.jpg"
+          alt="Steven García Avatar"
+        />
         <div className={styles.about_description}>
           <h3>Profile</h3>
           <p>
