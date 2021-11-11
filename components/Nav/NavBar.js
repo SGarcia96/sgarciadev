@@ -14,7 +14,7 @@ const NavBar = () => {
           name="Projects"
         />
         <LinkItem
-          href="/blogs"
+          href="/blog"
           name="Blog"
         />
       </nav>

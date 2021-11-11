@@ -3,7 +3,7 @@ import Project from '../components/Project/Project'
 
 const Projects = () => {
   return (
-    <Layout>
+    <Layout title="Steven García - Projects">
       <Project />
     </Layout>
   )

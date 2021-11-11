@@ -3,7 +3,7 @@ import Blog from '../components/Blog/Blog'
 
 const Blogs = () => {
   return (
-    <Layout>
+    <Layout title="Steven García - Projects">
       <Blog />
     </Layout>
   )

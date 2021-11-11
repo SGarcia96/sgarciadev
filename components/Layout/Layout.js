@@ -1,31 +1,46 @@
 import Head from 'next/head'
 import NavBar from '../Nav/NavBar'
-import utilStyles from '../../styles/Home.module.css'
+import { useRouter } from 'next/router'
 
-export const siteTitle = 'SGarcia Dev'
+const Layout = ({ children, ...customMeta }) => {
+  const router = useRouter()
 
-const Layout = ({ children }) => {
+  const meta = {
+    title: 'Steven García - Software Engineer',
+    description: 'I\'m an Software Engineer from Spain, Cádiz/Gibraltar. Get in touch with me to know more.',
+    image: '/images/profile.jpg',
+    type: 'website',
+    ...customMeta
+  }
+
   return (
-    <div className={utilStyles.bg_image}>
-      <div className={utilStyles.container}>
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="Welcome to my website, I'm a Software engineer and here you can discover my Projects | Blog | and more"
-          />
-          <meta
-            property="og:image"
-            content={`https://og-image.vercel.app/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-          />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Head>
-        <NavBar />
-        <main>{children}</main>
-      </div>
+    <div>
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="robots" content="follow, index" />
+        <meta name="description" content={meta.description} />
+        <meta
+          property="og:url"
+          content={`https://sgarcia.netlify.app${router.asPath}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://sgarcia.netlify.app${router.asPath}`}
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:type" content={meta.type} />
+        <meta property="og:site_name" content="Steven García" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@SGarciadev" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
+      </Head>
+      <NavBar />
+      <main>{children}</main>
     </div>
   )
 }
