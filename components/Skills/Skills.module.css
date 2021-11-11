@@ -65,6 +65,6 @@
 .skills_name {
   text-align: center;
   font-variant: small-caps;
-  font-weight: 500;
+  font-size: var(--social-font);
   color: var(--dark-color);
 }

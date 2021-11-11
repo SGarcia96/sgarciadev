@@ -21,11 +21,11 @@ const Layout = ({ children, ...customMeta }) => {
         <meta name="description" content={meta.description} />
         <meta
           property="og:url"
-          content={`https://sgarcia.netlify.app${router.asPath}`}
+          content={`https://sgarciadev.vercel.app${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://sgarcia.netlify.app${router.asPath}`}
+          href={`https://sgarciadev.vercel.app${router.asPath}`}
         />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:type" content={meta.type} />

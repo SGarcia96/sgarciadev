@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
 :root {
   --header-font: 2.5rem;
   --subheader-font: 2rem;
@@ -39,14 +41,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: antiquewhite;
   width: 100%;
   height: 100%;
