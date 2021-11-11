@@ -16,7 +16,6 @@ const Layout = ({ children, ...customMeta }) => {
   return (
     <div>
       <Head>
-        <html lang="en" />
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description} />
