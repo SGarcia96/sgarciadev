@@ -16,12 +16,16 @@
 
 .about_title {
   font-size: var(--subheader-font);
-  font-variant: small-caps;
+  font-weight: 500;
   margin: 0;
   grid-area: title;
   color: var(--dark-color);
   padding: 10px 0;
   border-bottom: 1px solid var(--mid-color);
+}
+
+.about_title_span {
+    display: inline-block;
 }
 
 @media screen and (min-width:768px) {
@@ -37,6 +41,10 @@
   position: relative;
   margin: 0 auto;
   grid-area: avatar;
+}
+
+.about_avatar > * {
+    overflow: visible!important;
 }
 
 .about_avatar::before {
