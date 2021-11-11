@@ -119,7 +119,7 @@ const Skills = () => {
             h="84"
             w="84"
             alt="cshard icon"
-            name="cshard"
+            name="c#"
           />
           <SkillItem
             src={solidity}
