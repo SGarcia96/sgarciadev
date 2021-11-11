@@ -12,14 +12,14 @@ const Skills = () => {
             h="84"
             w="84"
             alt="html icon"
-            name="HTML"
+            name="html"
           />
           <SkillItem
             src="/images/tecnologies/css.svg"
             h="84"
             w="84"
             alt="css icon"
-            name="CSS"
+            name="css"
           />
           <SkillItem
             src="/images/tecnologies/javascript.svg"

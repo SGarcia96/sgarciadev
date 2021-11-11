@@ -19,8 +19,8 @@
 
 .skills_title {
   margin: 0;
-  color: var(--semidark-color);
-  font-size: var(--subtitle-font);
+  color: var(--dark-color);
+  font-size: var(--subheader-font);
   font-variant: small-caps;
   padding: 10px 0;
   border-bottom: 1px solid var(--mid-color);

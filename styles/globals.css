@@ -1,7 +1,23 @@
 :root {
-  --title-font: 3rem;
-  --subtitle-font: 1.75rem;
-  --normal-font: 1.15rem;
+  --header-font: 2.5rem;
+  --subheader-font: 2rem;
+  --subtitle-font: 1.5rem;
+  --normal-font: 1rem;
+  --little-font: .85rem;
+  --social-item: 2rem;
+  --social-font: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --header-font: 8rem;
+    --subheader-font: 4rem;
+    --subtitle-font: 2.5rem;
+    --normal-font: 1rem;
+    --little-font: .85rem;
+    --social-item: 3rem;
+    --social-font: 1rem;
+  }
 }
 
 :root {
