@@ -1,6 +1,6 @@
 // next.config.js
-const withTM = require("next-transpile-modules")(["gsap"]);
+const withTM = require('next-transpile-modules')(['gsap'])
 
 module.exports = withTM({
-    reactStrictMode: true
+  reactStrictMode: true
 })

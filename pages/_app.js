@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import { motion } from 'framer-motion'
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 function MyApp ({ Component, pageProps, router }) {
   return (

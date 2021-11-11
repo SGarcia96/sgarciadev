@@ -16,95 +16,85 @@ import python from '../../public/images/tecnologies/python.svg'
 import cshard from '../../public/images/tecnologies/cshard.svg'
 import solidity from '../../public/images/tecnologies/solidity.svg'
 import docker from '../../public/images/tecnologies/docker.svg'
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 const Skills = () => {
+  const refComponent = useRef(null)
+  const refTitle = useRef(null)
+  const refList = useRef(null)
+  const [applyAnims, setApplyAnims] = useState(false)
+  const idAnim = 'skills-anim-'
+  const size = 60
 
-    const refComponent = useRef(null);
-    const refTitle = useRef(null);
-    const refList = useRef(null);
-    const [applyAnims, setApplyAnims] = useState(false);
-    const idAnim = 'skills-anim-';
-    const size = 60;
+  const addAnim = useCallback(() => {
+    if (applyAnims) {
+      const theComponent = refComponent.current
+      const theTitle = refTitle.current
+      const theList = refList.current
+      const items = [...theList.querySelectorAll('li')]
 
-    const addAnim = useCallback(() => {
-
-        if(applyAnims){
-
-            const theComponent = refComponent.current;
-            const theTitle = refTitle.current;
-            const theList = refList.current;
-            const items = [...theList.querySelectorAll('li')];
-
-            gsap.to(theTitle, {
-                x: 100,
-                scrollTrigger : {
-                    id: `${idAnim}-1`,
-                    trigger: theComponent,
-                    start: "top center",
-                    end: "+=100%",
-                    // markers: true,
-                    scrub: true,
-                },
-            });
-
-
-            gsap.set(items, {
-                autoAlpha: 0,
-                y: 60
-            });
-
-            ScrollTrigger.batch(items, {
-                trigger: items,
-                start: "top+=40px bottom",
-                // markers: true,
-                id: `${idAnim}-item`,
-                onEnter: items => {
-                    gsap.to(items, {
-                        autoAlpha: 1,
-                        y: 0,
-                        stagger: 0.15
-                    });
-                },
-                once: true
-            });
-
-            ScrollTrigger.refresh();
+      gsap.to(theTitle, {
+        x: 100,
+        scrollTrigger: {
+          id: `${idAnim}-1`,
+          trigger: theComponent,
+          start: 'top center',
+          end: '+=100%',
+          // markers: true,
+          scrub: true
         }
+      })
 
-    }, [applyAnims]);
+      gsap.set(items, {
+        autoAlpha: 0,
+        y: 60
+      })
 
-    const removeAnim = useCallback(() => {
+      ScrollTrigger.batch(items, {
+        trigger: items,
+        start: 'top+=40px bottom',
+        // markers: true,
+        id: `${idAnim}-item`,
+        onEnter: items => {
+          gsap.to(items, {
+            autoAlpha: 1,
+            y: 0,
+            stagger: 0.15
+          })
+        },
+        once: true
+      })
 
-        if(applyAnims){
-            let STs = ScrollTrigger.getAll();
-            if(STs){
-                STs.forEach(ST => {
-                    ST && (ST.vars.id === `${idAnim}-1` ) && ST.kill();
-                    ST && (ST.vars.id === `${idAnim}-item` ) && ST.kill();
-                })
-            }
-        }
-    }, [applyAnims]);
+      ScrollTrigger.refresh()
+    }
+  }, [applyAnims])
 
-    useEffect(() => {
+  const removeAnim = useCallback(() => {
+    if (applyAnims) {
+      const STs = ScrollTrigger.getAll()
+      if (STs) {
+        STs.forEach(ST => {
+          ST && (ST.vars.id === `${idAnim}-1`) && ST.kill()
+          ST && (ST.vars.id === `${idAnim}-item`) && ST.kill()
+        })
+      }
+    }
+  }, [applyAnims])
 
-        document.fonts.ready.then(function () {
-            setApplyAnims(true);
-        });
+  useEffect(() => {
+    document.fonts.ready.then(function () {
+      setApplyAnims(true)
+    })
+  }, [])
 
-    }, [])
-
-    useEffect(() => {
-
-        if(applyAnims){
-            addAnim();
-            return removeAnim;
-        }
-
-    }, [applyAnims])
+  useEffect(() => {
+    if (applyAnims) {
+      addAnim()
+      return removeAnim
+    }
+  }, [applyAnims])
 
   return (
     <section className={styles.skills_container} ref={refComponent}>
