@@ -9,18 +9,23 @@
 
 .title {
   font-size: var(--header-font);
-  font-weight: 600;
-  font-variant: small-caps;
-  margin: 0.25em;
+  font-weight: 500;
+  margin: 0px;
   text-align: center;
-  color: #5f4938;
+  color: var(--dark-color);
+  font-size: clamp(48px, 10vw, 10vw);
+  line-height: 1.42;
+  margin-bottom: 40px;
 }
 
 .subtitle {
   font-size: var(--subtitle-font);
-  font-variant: small-caps;
-  margin-top: 0;
+  font-weight: 300;
+  margin: 0px;
   color: #d0ad91;
+  font-size: clamp(24px, 5vw, 5vw);
+  line-height: 1.42;
+  margin-bottom: 40px;
 }
 
 .hero_social {
@@ -39,5 +44,5 @@
 
 .social_name {
   font-size: var(--social-font);
-  font-variant: small-caps;  
+  font-weight: 300;
 }
