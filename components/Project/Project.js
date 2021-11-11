@@ -1,13 +1,14 @@
 import styles from './Project.module.css'
 import ProjectImage from './ProjectImage'
 import ProjectDescription from './ProjectDescription'
+import countryPic from '../../public/images/projects/country-finder.png'
 
 const Project = () => {
   return (
       <section className={styles.section_container}>
         <article className={styles.section_content}>
           <ProjectImage
-            src="/images/projects/country-finder.png"
+            src={countryPic}
             alt="Country finder app example"
           />
           <ProjectDescription
